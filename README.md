@@ -28,10 +28,10 @@ The calculator requires two files.
 
 "INFO" file: see sample_info. This is a map file. Each row is a marker. The columns contain:
 
-Column 1: the SNP identifier
-Column 2: the physical position (not used)
-Column 3: The recombination position, in units of rho (=4Nr) the population recombination rate parameter
-Column 4, 5: Alleles for the marker (not used)
+ Column 1: the SNP identifier
+ Column 2: the physical position (not used)
+ Column 3: The recombination position, in units of rho (=4Nr) the population recombination rate parameter
+ Column 4, 5: Alleles for the marker (not used)
 
 "DATA" file: see sample_data. This is a flat file (no headers); each row is a chromosome, each column is an allele at the given marker. 
 The markers are polarized by ancestral state. "0" is ancestral, "1" is derived.   
@@ -45,12 +45,12 @@ The calculator can be used in two modes.
 
 Mode One. Provide an info and data file
 
-%> ./iHS_calc sample_info sample_data
+  %> ./iHS_calc sample_info sample_data
 
 this will analyze all markers in the given files.
 
 Mode Two. Focus on a subset of the data
 
-%> ./iHS_calc sample_info sample_data 0 9
+  %> ./iHS_calc sample_info sample_data 0 9
 
 this will analyze only the first 10 markers in the data file provided.
